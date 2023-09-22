@@ -1,0 +1,1053 @@
+body {
+   background: #FFFFFF;
+}
+
+
+/*
+
+
+ shadowed:  adds box shadow;
+ bordered:  adds border color;
+ rounded: makes element circular, works best when element has equal width and height;
+
+ --------------------------------- Containers -----------------------------------------------
+
+ display-flex:  Makes element a flexbox;
+ fit__content:  makes container take width of its content;
+ inline__display : adds inline display styling to element;
+ align__content: Aligns container content vertically, works together with display-flex class ;
+ justify__content : Aligns container content horizontally, works together with display-flex class;
+ flex__left:  Makes element move to the far right of its container, container must have display-flex class;
+ grid__display:  Makes element a grid container for its content;
+ double__grid: Makes container show  2 children items per row, works together with grid__display class;
+ triple__grid: Makes container show  3 children items per row, works together with grid__display class;
+ quadruple__grid: Makes container 4 show children items per row, works together with grid__display class;
+ centered__container:  Makes container vertically centered, can be used together with the centered__container__sm,
+ centered__container__md, centered__container__lg to select the size of the container;
+ half__width:  Makes element take 50% width of its container;
+ full__width:  Makes element take 100% width of its container;
+ full__height: Makes element take the full height of its container;
+
+ ----------------------------------- Border radius -------------------------------------------------
+
+ br__small, br__mid, br__large:  Adds border radius of different pixels depending on which class is used;
+
+ -------------------------------------------------------------------------------------------
+
+ sm - small, md - medium, lg - large;
+
+ ----------------------------------------- Margins -------------------------------------------
+
+ sm__mg, md__mg, lg__mg:  Adds margin of different pixels depending on which class is used;
+ sm__lm, md__lm, lg__lm:  Adds left margin of different pixels depending on which class is used;
+ sm__rm, md__rm, lg__rm:  Adds right margin of different pixels depending on which class is used;
+ sm__tm, md__tm, lg__tm:  Adds top margin of different pixels depending on which class is used;
+ sm__bm, md__bm, lg__bm:  Adds bottom margin of different pixels depending on which class is used;
+ sm__mx, md__mx, lg__mx:  Adds horizontal margin (left and right) of different pixels depending on which class is used;
+ sm__my, md__my, lg__my:  Adds vertical margin (top and bottom) of different pixels depending on which class is used;
+ mx-center: makes element centered horizontally by setting left and right margins to auto
+
+
+ --------------------------------------- Padding ---------------------------------------------------
+
+ sm__pd, md__pd, lg__pd:  Adds padding of different pixels depending on which class is used;
+ sm__lp, md__lp, lg__lp:  Adds left padding of different pixels depending on which class is used;
+ sm__rp, md__rp, lg__rp:  Adds right padding of different pixels depending on which class is used;
+ sm__tp, md__tp, lg__tp:  Adds top padding of different pixels depending on which class is used;
+ sm__bp, md__bp, lg__bp:  Adds bottom padding of different pixels depending on which class is used;
+ sm__px, md__px, lg__px:  Adds horizontal padding (left and right) of different pixels depending on which class is used;
+ sm__py, md__py, lg__py:  Adds vertical padding (top and bottom) of different pixels depending on which class is used;
+
+ 
+ ------------------------------------- Text styling ----------------------------------
+
+text__bold:  Makes text bold;
+text__sm, text__md, text__lg:  Adds different font sizes depending on which one is selected;
+text__left: Aligns text to the left;
+text__right: Aligns text to the right;
+text__center: Aligns text to the center;
+
+
+
+----------------------------------- Popover --------------------------------------------
+
+popover__ref : Makes element the reference element for the popover (most times normally a container for the popover element)
+pop__over: The popover element class;
+
+
+----------------------------------- Charts ---------------------------------------------
+doughnut__holder: Wrap doughnut chart canvas in a div container with this class
+
+ */
+
+.shadowed {
+   box-shadow: 0 2px 8px rgba(15, 62, 182, .05);
+}
+
+.bordered {
+   border: 1px solid var(--border-color);
+}
+
+.rounded {
+   border-radius: 50%;
+}
+
+.fit__content {
+   width: fit-content;
+   width: -moz-fit-content;
+}
+
+.inline__display {
+   display: inline;
+}
+
+.align__content {
+   align-items: center;
+}
+
+.justify__content {
+   justify-content: center;
+}
+
+
+.flex__left {
+   margin-left: auto;
+}
+
+.grid__display {
+   display: grid;
+   grid-gap: 12px 20px;
+}
+
+.double__grid {
+   grid-template-columns: 48% 48%;
+}
+
+.triple__grid {
+   grid-template-columns: 32% 32% 32%;
+}
+
+.quadruple__grid {
+   grid-template-columns: 24% 24% 24% 24%;
+}
+
+.text__center {
+   text-align: center;
+}
+
+.text__left {
+   text-align: left;
+}
+
+.text__right {
+   text-align: right;
+}
+
+.centered__container {
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/* .centered__container__md { */
+.container__md {
+   width: 65%;
+}
+
+/* .centered__container__sm { */
+.container__sm {
+   width: 45%;
+}
+
+/* .centered__container__lg { */
+.container__lg {
+   width: 90%;
+}
+
+.centered__image {
+   display: block;
+   margin: 0 auto;
+}
+
+.half__width {
+   width: 50%;
+}
+
+.onethird__width {
+   width: 25%;
+}
+
+.twothird__width {
+   width: 75%;
+}
+
+.full__width {
+   width: 100%;
+}
+
+.full__height {
+   height: 100%;
+}
+
+.br__small {
+   border-radius: 8px;
+}
+
+.br__mid {
+   border-radius: 12px;
+}
+
+.br__large {
+   border-radius: 16px;
+}
+
+.sm__mg {
+   margin: 12px;
+}
+
+.md__mg {
+   margin: 20px;
+}
+
+.lg__mg {
+   margin: 30px;
+}
+
+.sm__lm {
+   margin-left: 12px;
+}
+
+.md__lm {
+   margin-left: 20px;
+}
+
+.lg__lm {
+   margin-left: 30px;
+}
+
+.sm__rm {
+   margin-right: 12px;
+}
+
+.md__rm {
+   margin-right: 20px;
+}
+
+.lg__rm {
+   margin-right: 30px;
+}
+
+
+.sm__tm {
+   margin-top: 12px;
+}
+
+.md__tm {
+   margin-top: 24px;
+}
+
+
+.lg__tm {
+   margin-top: 36px;
+}
+
+.sm__bm {
+   margin-bottom: 8px;
+}
+
+
+.md__bm {
+   margin-bottom: 16px;
+}
+
+.lg__bm {
+   margin-bottom: 24px;
+}
+
+.sm__mx {
+   margin-left: 12px;
+   margin-right: 12px;
+}
+
+.md__mx {
+   margin-left: 20px;
+   margin-right: 20px;
+}
+
+.lg__mx {
+   margin-left: 30px;
+   margin-right: 30px;
+}
+
+.sm__my {
+   margin-top: 12px;
+   margin-bottom: 12px;
+}
+
+.md__my {
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.lg__my {
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+
+.mx__center {
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.my__center {
+   margin-top: auto;
+   margin-bottom: auto;
+}
+
+.sm__pd {
+   padding: 12px;
+}
+
+.md__pd {
+   padding: 20px;
+}
+
+.lg__pd {
+   padding: 30px;
+}
+
+
+.sm__lp {
+   padding-left: 12px;
+}
+
+.md__lp {
+   padding-left: 20px;
+}
+
+.lg__lp {
+   padding-left: 30px;
+}
+
+.sm__rp {
+   padding-right: 12px;
+}
+
+.md__rp {
+   padding-right: 20px;
+}
+
+.lg__rp {
+   padding-right: 30px;
+}
+
+
+.sm__tp {
+   padding-top: 12px;
+}
+
+.md__tp {
+   padding-top: 20px;
+}
+
+.lg__tp {
+   padding-top: 30px;
+}
+
+.sm__bp {
+   padding-bottom: 12px;
+}
+
+.md__bp {
+   padding-bottom: 20px;
+}
+
+.lg__bp {
+   padding-bottom: 30px;
+}
+
+
+.sm__px {
+   padding-left: 12px;
+   padding-right: 12px;
+}
+
+.md__px {
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+.lg__px {
+   padding-left: 30px;
+   padding-right: 30px;
+}
+
+.sm__py {
+   padding-top: 12px;
+   padding-bottom: 12px;
+}
+
+.md__py {
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+
+.lg__py {
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+.text__sm {
+   font-size: 1.3rem;
+}
+
+.text__md {
+   font-size: 1.6rem;
+}
+
+.text__lg {
+   font-size: 1.95rem;
+}
+
+.text__bold {
+   font-weight: 600;
+}
+
+.text__align_r {
+   text-align: right !important;
+}
+
+/*-------------------- Popover ---------------------*/
+.popover__ref {
+   position: relative;
+   z-index: 1;
+}
+
+.popover__ref:hover {
+   cursor: pointer;
+}
+
+.pop__over {
+   position: absolute;
+   top: 100%;
+   left: 45%;
+   transform: translateX(-50%);
+   padding: 16px 12px;
+   background: #ffffff;
+   box-shadow: 0 2px 8px rgba(15, 62, 182, .05);
+   width: 230px;
+   max-width: 500px;
+   display: none;
+   z-index: 1080;
+}
+
+.search__icon {
+   position: absolute;
+   top: 9px;
+   left: 12px;
+   font-size: 18px;
+   color: var(--darker-blue);
+}
+
+
+.search__box {
+   width: 250px;
+   font-size: 1.3rem;
+   padding: 8px 35px;
+}
+
+
+/* ----------------------------------------- Chatbox styling ---------------------------------------- */
+
+.chat__box {
+   position: fixed;
+   bottom: 0;
+   right: 5%;
+   overflow: hidden;
+   border-radius: 4px;
+   width: 420px;
+   height: 50px;
+   z-index: 99;
+}
+
+#chatbox__toggler {
+   width: 20px;
+   height: 20px;
+   display: flex;
+}
+
+#chatbox__toggler:hover {
+   cursor: pointer;
+   transform: scale(1.1);
+}
+
+.chat__box__header {
+   display: flex;
+   padding: 0 18px;
+   align-items: center;
+   color: #ffffff;
+   height: 50px;
+   background-color: var(--darker-blue);
+}
+
+
+.chat__box__header i {
+   font-size: 20px;
+}
+
+.chat__box__header .minimizer {
+   width: 15px;
+   height: 3px;
+   background: #ffffff;
+   margin-top: auto;
+   display: none;
+}
+
+.chat__box__form {
+   background: #ffffff;
+}
+
+.chat__box__form input,
+.chat__box__form textarea {
+   padding: 16px 0;
+   border: none;
+}
+
+.chat__box__form input:focus,
+.chat__box__form textarea:focus {
+   box-shadow: none;
+}
+
+.chat__box__form input.message__header {
+   font-size: 1.7rem;
+   font-weight: 600;
+}
+
+.chat__box__form textarea.message__text {
+   border-top: 1px solid var(--border-color);
+   height: 240px;
+}
+
+.chat__box .action__buttons button {
+   background: transparent;
+   border: none;
+   color: var(--darker-blue);
+   font-size: 20px;
+   font-weight: 600;
+   height: 38px;
+   line-height: 38px;
+}
+
+.chat__box .action__buttons button:hover {
+   color: var(--lighter-blue);
+   transition: .2s ease-in;
+}
+
+.chat__box .action__buttons button:not(:last-child) {
+   margin-right: 6px;
+}
+
+
+.chat__box .people__notif {
+   color: var(--darker-blue);
+}
+
+/* --------------------------------------- Chart styling --------------------------------------- */
+
+.bar__holder {
+   height: 220px;
+   display: flex;
+   align-items: center;
+}
+
+.doughnut__holder {
+   height: 240px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.legend__item {
+   display: flex;
+   padding: 12px;
+   align-items: center;
+}
+
+.legend__item:hover {
+   background: var(--border-color);
+   transition: .2s ease;
+   cursor: pointer;
+}
+
+.legend__item:not(:last-child) {
+   border-bottom: 1px solid var(--border-color)
+}
+
+.legend__indicator {
+   width: 6px;
+   height: 6px;
+   border-radius: 50%;
+   margin-right: 8px;
+}
+
+.legend__text {
+   font-size: 1.25rem;
+   color: var(--sea-blue);
+}
+
+.legend__value {
+   font-size: 1.35rem;
+   font-weight: 700;
+   margin-left: auto;
+   color: var(--darker-blue);
+}
+
+.grid__legend__holder {
+   display: grid;
+   grid-template-columns: 32% 32% 32%;
+   padding: 20px 0;
+}
+
+.grid__legend__holder .legend__item {
+   border-bottom: none !important;
+}
+
+.grid__legend__holder .legend__item:hover {
+   background: none;
+}
+
+/*------------------------------------- Task percentage display ----------------------------- */
+
+
+.task__header {
+   color: var(--sea-blue);
+}
+
+.task__holder .task__item {
+   border-bottom: 1px solid var(--border-color);
+   padding: 16px 0;
+}
+
+.task__item,
+.task__progress {
+   display: flex;
+   align-items: center;
+}
+
+.task__item .task__name {
+   color: var(--darker-blue);
+}
+
+.task__stats .task__progress .progress__percent {
+   color: var(--lighter-blue);
+}
+
+.task__stats .task__progress .progress__percent.full__progress {
+   color: #3F8755;
+}
+
+.task__stats .task__progress .progress__bar {
+   background: var(--lighter-blue);
+   height: 8px;
+   margin-left: 16px;
+}
+
+.task__stats .task__progress .progress__bar.full__progress {
+   width: 80%;
+   background: #3F8755;
+   margin-left: 8px;
+}
+
+/* ------------------------------------ Color picker --------------------------------------- */
+.item__color {
+   display: flex;
+   align-items: center;
+}
+
+.item__color .color__box {
+   width: 15px;
+   height: 15px;
+   background: #C4C4C4;
+   margin: 0 6px;
+}
+
+.item__color .color__box:hover {
+   cursor: pointer;
+}
+
+.item__color i {
+   color: var(--darker-blue);
+   font-size: 8px !important;
+}
+
+.color__picker {
+   top: 110%;
+   left: 0;
+   position: absolute;
+   box-shadow: 0 2px 8px rgba(15, 62, 182, .05);
+   display: grid;
+   grid-template-columns: 28% 28% 28%;
+   grid-gap: 8px;
+   justify-content: center;
+   width: 80px;
+   padding: 12px;
+   background: #ffffff;
+   z-index: 99;
+}
+
+.color__picker__hidden {
+   display: none;
+}
+
+.color__picker .color__item {
+   height: 15px;
+}
+
+.color__picker .color__item:hover {
+   cursor: pointer;
+   opacity: .8;
+}
+
+
+.sp-replacer {
+   border: none;
+}
+
+.sp-preview {
+   width: 18px;
+   height: 18px;
+   border: none;
+}
+
+.sp-dd {
+   font-size: 8px;
+   color: var(--sea-blue);
+}
+
+/*---------------------------------------- Project pages header -------------------------------*/
+.projects__header {
+   margin-top: 55px;
+   background: rgba(240, 246, 255, .3);
+
+}
+
+.header__content {
+   display: flex;
+   align-items: center;
+   width: 95%;
+   margin: 0 auto;
+}
+
+.projects__header .project__name {
+   color: var(--darker-blue);
+   margin-bottom: 4px;
+}
+
+.projects__header .search__sub {
+   color: var(--sea-blue);
+}
+
+.projects__header sup {
+   color: #ff0000;
+   font-weight: 700;
+}
+
+.project__cat {
+   background: rgba(240, 246, 255, .75);
+   border-radius: 24px;
+   padding: 6px 24px;
+   height: 45px;
+}
+
+.project__selector {
+   height: 100%;
+   border-right: 1px solid rgba(23, 53, 112, .45);
+   color: var(--darker-blue);
+   position: relative;
+   flex-grow: 1;
+   justify-content: space-between;
+   cursor: pointer;
+}
+
+.project__selector .cat__select__text:hover {
+   cursor: pointer;
+}
+
+.project__selector i {
+   font-size: 10px;
+}
+
+.selector__dropdown,
+.subcat__dropdown {
+   position: absolute;
+   background: #ffffff;
+   border-radius: 12px;
+   padding: 18px 14px;
+   z-index: 99;
+   display: none;
+}
+
+.selector__dropdown {
+   top: 120%;
+   left: 0;
+   width: 225px;
+}
+
+.subcat__dropdown {
+   left: 100%;
+   top: 0;
+   width: 256px;
+}
+
+.selector__dropdown header {
+   font-size: 1.35rem;
+   color: var(--sea-blue);
+}
+
+.selector__dropdown .cat__item {
+   display: flex;
+   align-items: center;
+   height: 40px;
+   padding: 0 6px;
+   color: var(--darker-blue);
+   position: relative;
+}
+
+.selector__dropdown .cat__item .cat__name {
+   font-size: 1.4rem;
+}
+
+.selector__dropdown .cat__item i {
+   font-size: 18px;
+   margin-left: auto;
+}
+
+.selector__dropdown .cat__item:hover {
+   background: var(--border-color);
+   cursor: pointer;
+   text-decoration: none;
+}
+
+.selector__dropdown .cat__item.cat__main:hover .subcat__dropdown {
+   display: block;
+}
+
+
+.subcat__dropdown .search__bar__holder {
+   position: relative;
+}
+
+.subcat__dropdown .search__bar__holder input {
+   padding: 8px 32px;
+   border: 1px solid rgba(49, 213, 236, .15);
+   border-radius: 16px;
+   font-size: 1.3rem;
+}
+
+.subcat__dropdown .search__bar__holder i {
+   font-size: 18px;
+   color: var(--darker-blue);
+   position: absolute;
+   right: 16px;
+   top: 8px;
+}
+
+.subcat__dropdown .subcat__list {
+   height: 200px;
+   overflow-y: auto;
+   white-space: nowrap;
+   background: #ffffff;
+}
+
+.subcat__dropdown .subcat__list::-webkit-scrollbar {
+   width: 2px;
+}
+
+.subcat__dropdown .subcat__list .circular {
+   width: 12px;
+   height: 12px;
+   border-radius: 50%;
+   border: 1px solid var(--border-color);
+   margin-right: 12px;
+}
+
+.subcat__dropdown .subcat__list .cat__name {
+   overflow: hidden;
+   font-weight: 600;
+}
+
+.subcat__dropdown .subcat__list .cat__item:hover .circular {
+   border: 1px solid var(--sea-blue);
+}
+
+.project__stats {
+   color: var(--darker-blue);
+}
+
+.project__stats .project__count {
+   margin-right: 6px;
+   color: var(--sea-blue);
+}
+
+.summary__section {
+   color: var(--darker-blue);
+   width: 50%;
+}
+
+.summary__section header {
+   color: var(--darker-blue);
+   font-size: 1.5rem;
+}
+
+.summary__section .stat__values {
+   font-size: 1.4rem;
+}
+
+.summary__section .summary__value {
+   font-weight: 700;
+   margin-left: 8px;
+}
+
+.map__section {
+   width: 300px;
+   height: 250px;
+   border: 1px dashed var(--sea-blue);
+}
+
+
+/*---------------------------------------- Toolbar ------------------------------------*/
+.project__toolbar {
+   display: flex;
+   padding: 20px 0;
+   height: 60px;
+   width: 92%;
+   margin: 0 auto;
+}
+
+.project__toolbar .toolbar__section {
+   display: flex;
+   align-items: center;
+   padding: 0 16px;
+   height: 100%;
+}
+
+.project__toolbar .toolbar__section:not(:last-child) {
+   border-right: 1px solid var(--darker-blue);
+}
+
+.project__toolbar .toolbar__section .toolbar__item {
+   position: relative;
+}
+
+.project__toolbar .toolbar__section .toolbar__item:not(:last-child) {
+   margin-right: 16px;
+}
+
+.toolbar__section .toolbar__item {
+   font-size: 20px;
+   color: var(--sea-blue);
+}
+
+.toolbar__section .toolbar__item:hover {
+   color: var(--lighter-blue);
+   transition: .2s ease-in;
+   cursor: pointer;
+}
+
+.toolbar__item .item__popover {
+   position: absolute;
+   top: 100%;
+   left: 50%;
+   transform: translateX(-50%);
+   padding: 0 12px;
+   height: 27px;
+   max-height: 56px;
+   width: 110px;
+   border-radius: 4px;
+   background: var(--border-color);
+   color: var(--darker-blue);
+   display: none;
+
+}
+
+.toolbar__item:hover .item__popover {
+   display: block;
+}
+
+.toolbar__item .item__popover .item__name__holder {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.2rem;
+   text-align: center;
+   font-weight: 700;
+}
+
+.toolbar__item .item__popover .item__name__holder::before {
+   content: "";
+   position: absolute;
+   top: -8px;
+   left: 50%;
+   transform: translateX(-50%);
+   border-left: 8px solid transparent;
+   border-right: 8px solid transparent;
+   border-bottom: 8px solid var(--border-color);
+}
+
+.toolbar__item .item__popover .item__name__holder .item__name__text {
+   text-align: center;
+}
+
+@media screen and (min-width: 651px) and (max-width: 1024px) {
+
+   .triple__grid,
+   .quadruple__grid {
+      grid-template-columns: 48% 48%;
+      justify-content: center;
+   }
+
+   .centered__container {
+      width: 85%;
+   }
+
+   /* .triple__grid .grid__item:last-child {
+		grid-column: 1 / span 2;
+	} */
+}
+
+@media screen and (max-width: 650px) {
+
+   .double__grid,
+   .triple__grid,
+   .quadruple__grid {
+      grid-template-columns: 85%;
+      justify-content: center;
+   }
+
+   .centered__container {
+      width: 90%;
+   }
+
+   .search__box {
+      width: 200px;
+   }
+
+   .chat__box {
+      width: 90%;
+      right: 10px;
+   }
+
+   .pop__over {
+      left: 0;
+   }
+}
+
+/*=================================================================*/
+
+@media (max-width: 510px) {
+   .pop__over {
+      transform: translateX(-45%);
+   }
+}

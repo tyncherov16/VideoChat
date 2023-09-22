@@ -1,0 +1,675 @@
+body {
+   background: #FFFFFF;
+}
+
+.mega__menu {
+   width: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 999;
+}
+
+.main__menu {
+   width: 100%;
+   /* background: var(--darker-blue); */
+   background: rgba(0, 0, 0, .90);
+   color: #FFFFFF;
+   position: relative;
+   /* overflow:  hidden; */
+}
+
+.main__menu .menu__header {
+   width: 95%;
+   height: 55px;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+}
+
+.main__menu .menu__header .menu__logo {
+   width: 142px;
+   height: 36px;
+}
+
+.logo__short {
+   display: none;
+}
+
+.main__menu .menu__header .menu__logo img {
+   height: 45px;
+   margin-top: -5px;
+}
+
+.main__menu .menu__header .menu__links {
+   width: fit-content;
+   width: -moz-fit-content;
+   height: 100%;
+   margin-left: auto;
+   display: flex;
+   align-items: center;
+}
+
+.main__menu .menu__header .header__item {
+   height: 100%;
+}
+
+.notif__icon {
+   color: #ffffff;
+   margin-top: 4px;
+}
+
+/* .main__menu .menu__header .header__item a{ */
+.header__item a {
+   display: block;
+   height: 100%;
+   color: #FFFFFF;
+   text-decoration: none;
+}
+
+.header__item.popover__trigger {
+   width: 65px;
+}
+
+.main__menu .menu__header .header__item a:hover {
+   text-decoration: none;
+}
+
+
+.main__menu .menu__header .header__item a .header__link {
+   display: flex;
+   align-items: center;
+   padding: 0 10px;
+   height: 100%;
+}
+
+.main__menu .menu__header .header__item .item__icon {
+   font-size: 18px;
+}
+
+.main__menu .menu__header .header__item .txt {
+   height: 25px;
+   line-height: 27px;
+   padding-right: 8px;
+   margin: 0 8px;
+   font-size: 1.3rem;
+}
+
+.main__menu .menu__header .toggle__arrow {
+   font-size: 7px;
+}
+
+.main__menu .menu__header .header__item:hover .txt {
+   border-right: none;
+}
+
+.main__menu .menu__header .header__item:hover,
+.main__menu .menu__header .user__center:hover {
+   background: #003366;
+   background: rgba(0, 0, 0, .90);
+   transition: .3s ease;
+   cursor: pointer;
+}
+
+.main__menu .menu__header .user__center {
+   height: 100%;
+   display: flex;
+   align-items: center;
+   padding: 0 12px;
+   /* box-shadow: 0 4px 8px rgba(15, 62, 182, 0.15); */
+}
+
+
+
+.main__menu .menu__header .user__center .user__pfp img {
+   width: 36px;
+   height: 36px;
+   border-radius: 50%;
+}
+
+.main__menu .menu__header .user__center .user__shorts {
+   padding: 0 12px;
+   margin-right: 6px;
+}
+
+.main__menu .menu__header .user__center .user__shorts .user__name {
+   font-size: 1.3rem;
+   margin-bottom: 2px;
+}
+
+.main__menu .menu__header .user__center .user__shorts .user__title {
+   font-size: 1.1rem;
+}
+
+.widget__center {
+   width: 200px;
+   background: #FFFFFF;
+   border-radius: 8px;
+   position: absolute;
+   top: 50px;
+   right: 2%;
+   z-index: 99;
+   box-shadow: 0 4px 8px rgba(15, 62, 182, 0.15);
+   display: none;
+}
+
+.widget__center .widget__holder {
+   width: 100%;
+   height: 100%;
+   position: relative;
+   z-index: -1;
+}
+
+.widget__center .widget__holder::before {
+   content: "";
+   position: absolute;
+   top: -10px;
+   right: 35px;
+   z-index: 1;
+   width: 0;
+   height: 0;
+   border-left: 10px solid transparent;
+   border-right: 10px solid transparent;
+   border-bottom: 10px solid #ffffff;
+}
+
+.widget__center .widget__item {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   padding: 0 16px;
+   height: 45px;
+   margin: px auto;
+   color: var(--darker-blue);
+   text-decoration: none;
+}
+
+
+.widget__center .widget__item:hover {
+   font-weight: 700;
+   background: var(--border-color);
+}
+
+.widget__center .widget__item:first-child:hover {
+   font-weight: 700;
+   background: var(--border-color);
+   border-radius: 8px 8px 0 0;
+}
+
+.widget__center .border__line {
+   width: 100%;
+   height: 1px;
+   background: rgba(15, 62, 182, 0.15);
+}
+
+.widget__center .widget__item i {
+   font-size: 20px;
+   margin-right: 6px;
+}
+
+.widget__center .widget__item .txt {
+   font-size: 1.3rem;
+}
+
+
+.main__menu .menu__listing {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.main__menu .menu__listing.listing__main {
+   height: 120px;
+   background: rgba(0, 0, 0, .90);
+   z-index: -1;
+}
+
+.main__menu .menu__listing.listing__sub {
+   height: 110px;
+   background: rgba(0, 13, 26, .9);
+   position: relative;
+   z-index: 1;
+}
+
+.main__menu .menu__listing.listing__sub .listings__mirror {
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.main__menu .menu__listing.listing__sub .listings__mirror .positional__arrow {
+   position: absolute;
+   z-index: 2;
+   top: -11px;
+   left: 5%;
+   width: 0;
+   height: 0;
+   border-bottom: 12px solid rgba(0, 13, 26, .7);
+   border-right: 12px solid transparent;
+   border-left: 12px solid transparent;
+}
+
+.main__menu .listings {
+   width: 93%;
+   color: rgba(255, 255, 255, .75);
+   position: relative;
+}
+
+.main__menu .listings .heading {
+   font-size: 1.4rem;
+   margin-bottom: 10px;
+}
+
+.main__menu .listings .list__holder {
+   display: flex;
+   flex-wrap: nowrap;
+   overflow-x: auto;
+   padding-bottom: 12px;
+}
+
+.main__menu .listings .movement__arrow {
+   font-size: 22px;
+   color: #ffffff;
+   position: absolute;
+   top: 50%;
+}
+
+.main__menu .listings .movement__arrow.arrow__left {
+   left: -2.5%;
+   display: none;
+}
+
+.main__menu .listings .movement__arrow.arrow__right {
+   right: -2.5%;
+}
+
+.main__menu .listings .movement__arrow:hover {
+   opacity: .8;
+   cursor: pointer;
+}
+
+.main__menu .listings .list__holder .list__item {
+   flex: 0 0 auto;
+}
+
+
+.main__menu .listings .list__holder .list__item a {
+   display: block;
+   width: 100%;
+   height: 100%;
+   color: rgba(255, 255, 255, .5);
+}
+
+.main__menu .listings .list__holder .list__item a:hover {
+   text-decoration: none;
+   color: #FFFFFF;
+}
+
+.main__menu .listing__main .listings .list__holder .list__item {
+   width: 155px;
+   height: 62px;
+}
+
+.main__menu .listing__main .listings .list__holder .list__item.active__item i,
+.main__menu .listing__main .listings .list__holder .list__item.active__item a {
+   color: #FFFFFF;
+}
+
+.main__menu .listing__main .listings .list__holder .list__item:first-child {
+   background: rgba(255, 153, 15, .8);
+}
+
+.main__menu .listing__main .listings .list__holder .list__item:nth-child(2) {
+   background: rgba(76, 86, 86, .8);
+}
+
+.main__menu .listing__main .listings .list__holder .list__item:nth-child(3) {
+   background: rgba(15, 62, 182, .8);
+}
+
+.main__menu .listing__main .listings .list__holder .list__item:nth-child(4) {
+   background: rgba(23, 53, 112, .8);
+}
+
+.main__menu .listing__main .listings .list__holder .list__item:nth-child(5) {
+   background: rgba(90, 150, 122, .8);
+}
+
+.main__menu .listing__main .listings .list__holder .list__item:last-child {
+   background: rgba(76, 86, 86, .8);
+}
+
+.main__menu .menu__listing .listings .list__holder .list__item:not(:last-child) {
+   margin-right: 15px;
+}
+
+.main__menu .listing__sub .listings .list__holder .list__item {
+   width: 125px;
+   height: 44px;
+   background: #003366;
+   padding: 5px 10px;
+   position: relative;
+}
+
+.main__menu .listings .list__holder .list__item:hover {
+   color: #ffffff;
+   cursor: pointer;
+}
+
+.main__menu .listing__sub .listings .list__holder .list__item i {
+   position: absolute;
+   right: 6px;
+   bottom: 10px;
+   font-size: 1.7em;
+   opacity: 0.3;
+}
+
+.main__menu .listing__sub .listings .list__holder .list__item a {
+   display: flex;
+   flex-direction: column;
+}
+
+.main__menu .listing__sub .listings .list__holder .list__item .item__content {
+   color: #FFFFFF;
+   font-size: 1.2rem;
+   margin-top: auto;
+}
+
+
+.main__menu .listing__main .listings .list__holder .list__item .list__content {
+   width: 100%;
+   height: 100%;
+   padding: 5px 10px;
+   display: flex;
+   align-items: center;
+}
+
+.main__menu .listing__main .listings .list__holder .list__item .list__content .item__display {
+   width: 85%;
+   height: 85%;
+   padding-right: 6px;
+   border-right: 1px solid rgba(255, 255, 255, 0.35);
+   /* margin-right:  8px; */
+   display: flex;
+   flex-direction: column;
+   text-decoration: none;
+}
+
+.main__menu .listing__main .listings .list__holder .list__item .list__content .submenu__trigger {
+   width: 15%;
+   height: 100%;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+
+.main__menu .listing__main .listings .list__holder .list__item .list__content .item__display i {
+   font-size: 20px;
+   margin-top: 5px;
+   margin-left: 2px;
+}
+
+.main__menu .listing__main .listings .list__holder .list__item .list__content .item__display .item__desc {
+   font-size: 1.1rem;
+   margin-top: auto;
+}
+
+.main__menu .listing__main .listings .list__holder .list__item .list__content .direction__arrow {
+   font-size: 8px;
+}
+
+.main__menu .listings .list__holder::-webkit-scrollbar {
+   display: none;
+}
+
+
+.show__main {
+   animation: show__main .5s;
+}
+
+.hide__main {
+   animation: hide__main .5s;
+}
+
+
+.show__sub {
+   animation: show__sub .5s;
+}
+
+.hide__sub {
+   animation: hide__sub .5s;
+}
+
+@keyframes show__main {
+   from {
+      height: 55px;
+   }
+
+   to {
+      height: 175px;
+   }
+}
+
+@-webkit-keyframes show__main {
+   from {
+      height: 55px;
+   }
+
+   to {
+      height: 175px;
+   }
+}
+
+@-moz-keyframes show__main {
+   from {
+      height: 55px;
+   }
+
+   to {
+      height: 175px;
+   }
+}
+
+@-o-keyframes show__main {
+   from {
+      height: 55px;
+   }
+
+   to {
+      height: 175px;
+   }
+}
+
+@keyframes hide__main {
+   from {
+      height: 175px;
+   }
+
+   to {
+      height: 55px;
+   }
+}
+
+@-webkit-keyframes hide__main {
+   from {
+      height: 175px;
+   }
+
+   to {
+      height: 55px;
+   }
+}
+
+@-moz-keyframes hide__main {
+   from {
+      height: 175px;
+   }
+
+   to {
+      height: 55px;
+   }
+}
+
+@-o-keyframes hide__main {
+   from {
+      height: 175px;
+   }
+
+   to {
+      height: 55px;
+   }
+}
+
+@keyframes show__sub {
+   from {
+      height: 0px;
+   }
+
+   to {
+      height: 110px;
+   }
+}
+
+@-webkit-keyframes show__sub {
+   from {
+      height: 0px;
+   }
+
+   to {
+      height: 110px;
+   }
+}
+
+
+@-moz-keyframes show__sub {
+   from {
+      height: 0px;
+   }
+
+   to {
+      height: 110px;
+   }
+}
+
+@-o-keyframes show__sub {
+   from {
+      height: 0px;
+   }
+
+   to {
+      height: 110px;
+   }
+}
+
+
+
+@keyframes hide__sub {
+   from {
+      height: 110px;
+   }
+
+
+   to {
+      height: 0px;
+   }
+}
+
+@-moz-keyframes hide__sub {
+   from {
+      height: 110px;
+   }
+
+
+   to {
+      height: 0px;
+   }
+}
+
+@-webkit-keyframes hide__sub {
+   from {
+      height: 110px;
+   }
+
+
+   to {
+      height: 0px;
+   }
+}
+
+@-o-keyframes hide__sub {
+   from {
+      height: 110px;
+   }
+
+
+   to {
+      height: 0px;
+   }
+}
+
+@media screen and (min-width: 651px) and (max-width: 1024px) {
+   .notif__dropdown {
+      right: 42%;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .main__menu .menu__header .header__item .txt {
+      display: none;
+   }
+
+   .main__menu .menu__header .header__item .item__icon {
+      font-size: 22px;
+      margin-right: 6px;
+   }
+
+   .main__menu .menu__header .user__center .user__shorts {
+      display: none;
+   }
+
+   .main__menu .menu__header .toggle__arrow {
+      margin-left: 6px;
+   }
+
+   .main__menu .menu__header .menu__logo a .logo__main {
+      display: none;
+   }
+
+   .main__menu .menu__header .menu__logo a .logo__short {
+      display: block;
+      width: 36px;
+      height: 36px;
+   }
+
+   .notif__dropdown {
+      right: 32%;
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   .logo__main {
+      display: none;
+   }
+
+   .logo__short {
+      display: block;
+      /* width: 35px; */
+      height: 35px;
+   }
+}
+
+/*=================================================================================*/
+
+@media (max-width:479px) {
+   .header__item:nth-child(4) {
+      display: none;
+   }
+
+   .header__item.popover__trigger {
+      width: 50px;
+   }
+}

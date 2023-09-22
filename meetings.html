@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://dev.secure-dynamics.net/dashboard -->
+<html lang="en"><!--<![endif]--><!-- BEGIN HEAD -->
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <base href=".">
+   <title>Meetings Page</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+   <meta content="Contractor Business Portal" name="description">
+   <meta content="Chris S" name="author">
+   <!-- BEGIN GLOBAL MANDATORY STYLES -->
+   <link rel="apple-touch-icon" href="https://dev.secure-dynamics.net/public/favicon/favicon-32x32.png">
+   <link rel="shortcut icon" href="https://dev.secure-dynamics.net/public/favicon/favicon.ico" type="image/x-icon">
+   <link rel="icon" href="https://dev.secure-dynamics.net/public/favicon/favicon-32x32.png" type="image/x-icon">
+
+   <link href="./videochat_files/all.min.css" rel="stylesheet" type="text/css">
+   <link href="./videochat_files/boxicons.min.css" rel="stylesheet">
+   <link href="./videochat_files/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+   <link href="./videochat_files/bootstrap.min.css" rel="stylesheet" type="text/css">
+   <link href="./videochat_files/bootstrap-switch.min.css" rel="stylesheet" type="text/css">
+
+
+   <!-- END GLOBAL MANDATORY STYLES -->
+   <!-- BEGIN PAGE LEVEL PLUGINS -->
+   <link href="./videochat_files/daterangepicker.min.css" rel="stylesheet" type="text/css">
+   <link href="./videochat_files/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css">
+   <link href="./videochat_files/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
+   <link href="./videochat_files/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css">
+   <link href="./videochat_files/fullcalendar.min.css" rel="stylesheet" type="text/css">
+   <link href="./videochat_files/toastr.min.css" rel="stylesheet" type="text/css">
+   <link href="./videochat_files/jquery-ui.css" rel="stylesheet" type="text/css">
+   <link href="./videochat_files/datatables.min.css" rel="stylesheet" type="text/css">
+   <link href="./videochat_files/datatables.bootstrap.css" rel="stylesheet" type="text/css">
+   <!-- END PAGE LEVEL PLUGINS -->
+   <!-- BEGIN THEME GLOBAL STYLES -->
+   <link href="./videochat_files/components.min.css" rel="stylesheet" id="style_components" type="text/css">
+   <link href="./videochat_files/plugins.min.css" rel="stylesheet" type="text/css">
+   <link href="./videochat_files/iziModal.min.css" rel="stylesheet" type="text/css">
+   <!-- END THEME GLOBAL STYLES -->
+   <!-- BEGIN PAGE LEVEL STYLES -->
+   <link href="./videochat_files/profile.min.css" rel="stylesheet" type="text/css">
+   <!-- END PAGE LEVEL STYLES -->
+   <!-- BEGIN THEME LAYOUT STYLES -->
+   <link href="./videochat_files/layout.min.css" rel="stylesheet" type="text/css">
+   <!-- <link href="assets/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" /> -->
+   <link href="./videochat_files/securedy.css" rel="stylesheet" type="text/css">
+   <link href="./videochat_files/chatter.css" rel="stylesheet" type="text/css">
+   <!-- END THEME LAYOUT STYLES -->
+   <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+      crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+      integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   <!-- END HEAD -->
+   <style type="text/css">
+      .bg-font-service-Contacts {
+         color: #fff !important;
+      }
+
+      .bg-font-service-Contacts:hover {
+         color: #333 !important;
+      }
+
+      .bg-service-Contacts {
+         background: #AEA339 !important;
+      }
+
+      .bg-font-service-Schedule {
+         color: #fff !important;
+      }
+
+      .bg-font-service-Schedule:hover {
+         color: #333 !important;
+      }
+
+      .bg-service-Schedule {
+         background: #C8B22B !important;
+      }
+
+      .bg-font-service-Rolodex {
+         color: #fff !important;
+      }
+
+      .bg-font-service-Rolodex:hover {
+         color: #333 !important;
+      }
+
+      .bg-service-Rolodex {
+         background: #2F8686 !important;
+      }
+
+      .bg-font-service-Time-Card {
+         color: #fff !important;
+      }
+
+      .bg-font-service-Time-Card:hover {
+         color: #333 !important;
+      }
+
+      .bg-service-Time-Card {
+         background: #2718B2 !important;
+      }
+
+      .bg-font-service-Projects {
+         color: #fff !important;
+      }
+
+      .bg-font-service-Projects:hover {
+         color: #333 !important;
+      }
+
+      .bg-service-Projects {
+         background: #328C96 !important;
+      }
+
+      .bg-font-service-Field-Service {
+         color: #fff !important;
+      }
+
+      .bg-font-service-Field-Service:hover {
+         color: #333 !important;
+      }
+
+      .bg-service-Field-Service {
+         background: #294EC6 !important;
+      }
+
+      .bg-font-service-ProjectsDashboard {
+         color: #fff !important;
+      }
+
+      .bg-font-service-ProjectsDashboard:hover {
+         color: #333 !important;
+      }
+
+      .bg-service-ProjectsDashboard {
+         background: #B482CC !important;
+      }
+
+      .bg-font-service-Team {
+         color: #fff !important;
+      }
+
+      .bg-font-service-Team:hover {
+         color: #333 !important;
+      }
+
+      .bg-service-Team {
+         background: #D03232 !important;
+      }
+
+      .bg-font-service-NewTickets {
+         color: #fff !important;
+      }
+
+      .bg-font-service-NewTickets:hover {
+         color: #333 !important;
+      }
+
+      .bg-service-NewTickets {
+         background: #149C14 !important;
+      }
+
+      .bg-font-service-Products {
+         color: #fff !important;
+      }
+
+      .bg-font-service-Products:hover {
+         color: #333 !important;
+      }
+
+      .bg-service-Products {
+         background: #72A034 !important;
+      }
+
+      .bg-font-service-Transactions {
+         color: #fff !important;
+      }
+
+      .bg-font-service-Transactions:hover {
+         color: #333 !important;
+      }
+
+      .bg-service-Transactions {
+         background: #DD1717 !important;
+      }
+
+      .bg-font-service-Invoices {
+         color: #fff !important;
+      }
+
+      .bg-font-service-Invoices:hover {
+         color: #333 !important;
+      }
+
+      .bg-service-Invoices {
+         background: #336633 !important;
+      }
+
+      .bg-font-service-Bills {
+         color: #fff !important;
+      }
+
+      .bg-font-service-Bills:hover {
+         color: #333 !important;
+      }
+
+      .bg-service-Bills {
+         background: #1C6B27 !important;
+      }
+
+      .bg-font-service-Sales {
+         color: #fff !important;
+      }
+
+      .bg-font-service-Sales:hover {
+         color: #333 !important;
+      }
+
+      .bg-service-Sales {
+         background: #CC1818 !important;
+      }
+
+      .bg-font-service-Reports {
+         color: #fff !important;
+      }
+
+      .bg-font-service-Reports:hover {
+         color: #333 !important;
+      }
+
+      .bg-service-Reports {
+         background: #39B28F !important;
+      }
+
+      .bg-font-service-Accounts {
+         color: #fff !important;
+      }
+
+      .bg-font-service-Accounts:hover {
+         color: #333 !important;
+      }
+
+      .bg-service-Accounts {
+         background: #B62727 !important;
+      }
+
+      .bg-font-service-Charts-Of-Accounts {
+         color: #fff !important;
+      }
+
+      .bg-font-service-Charts-Of-Accounts:hover {
+         color: #333 !important;
+      }
+
+      .bg-service-Charts-Of-Accounts {
+         background: #D23232 !important;
+      }
+
+      .bg-font-service-Spreadsheets {
+         color: #fff !important;
+      }
+
+      .bg-font-service-Spreadsheets:hover {
+         color: #333 !important;
+      }
+
+      .bg-service-Spreadsheets {
+         background: #31A43C !important;
+      }
+
+      .bg-font-service-Forms {
+         color: #fff !important;
+      }
+
+      .bg-font-service-Forms:hover {
+         color: #333 !important;
+      }
+
+      .bg-service-Forms {
+         background: #9E2FC0 !important;
+      }
+   </style>
+   <style type="text/css">
+      .serv__Contacts {
+         background: #AEA33972 !important;
+      }
+
+      .serv__Schedule {
+         background: #C8B22B72 !important;
+      }
+
+      .serv__Rolodex {
+         background: #2F868672 !important;
+      }
+
+      .serv__Time-Card {
+         background: #2718B272 !important;
+      }
+
+      .serv__Projects {
+         background: #328C9672 !important;
+      }
+
+      .serv__Field-Service {
+         background: #294EC672 !important;
+      }
+
+      .serv__Team {
+         background: #D0323272 !important;
+      }
+
+      .serv__NewTickets {
+         background: #149C1472 !important;
+      }
+
+      .serv__Products {
+         background: #72A03472 !important;
+      }
+
+      .serv__Transactions {
+         background: #DD171772 !important;
+      }
+
+      .serv__Invoices {
+         background: #33663372 !important;
+      }
+
+      .serv__Bills {
+         background: #1C6B2772 !important;
+      }
+
+      .serv__Sales {
+         background: #CC181872 !important;
+      }
+
+      .serv__Reports {
+         background: #39B28F72 !important;
+      }
+
+      .serv__Charts-Of-Accounts {
+         background: #D2323272 !important;
+      }
+
+      .serv__Spreadsheets {
+         background: #31A43C72 !important;
+      }
+
+      .serv__Forms {
+         background: #9E2FC072 !important;
+      }
+   </style>
+
+</head>
+
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white page-full-width">
+
+   <div class="page-wrapper">
+      <!-- BEGIN HEADER -->
+      <link href="./videochat_files/general_style.css" rel="stylesheet">
+      <link href="./videochat_files/menu.css" rel="stylesheet">
+      <script src="./videochat_files/menu.js.загрузка"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+      <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.39/moment-timezone-with-data.min.js"></script>
+
+      <link href="./videochat_files/project_components.css" rel="stylesheet">
+      <div class="mega__menu">
+         <div class="main__menu">
+            <div class="menu__header">
+               <div class="menu__logo"></div>
+               <div class="menu__links"></div>
+            </div>
+         </div>
+      </div>
+      <link rel="stylesheet" href="css/style.min.css?_v=20230923000135">
+      <div class="page-container">
+         <div class="page-content-wrapper">
+            <div class="video-chat-page">
+               <div class="video-chat-page__container">
+                  <div class="video-chat-page__actions">
+                     <button type="button" class="video-chat-page__action host-meeting" data-toggle="modal"
+                        data-target="#host-meeting">
+                        <img src="img/video-chat-page/icons/host-meeting.svg" alt=""
+                           class="video-chat-page__action-icon">
+                        <p class="video-chat-page__action-text">Host a Meeting</p>
+                     </button>
+                     <button type="button" class="video-chat-page__action join-meeting" data-toggle="modal"
+                        data-target="#join-meeting">
+                        <img src="img/video-chat-page/icons/join-meeting.svg" alt=""
+                           class="video-chat-page__action-icon">
+                        <p class="video-chat-page__action-text">Join a Meeting</p>
+                     </button>
+                     <button type="button" class="video-chat-page__action schedule-meeting" data-toggle="modal"
+                        data-target="#schedule-meeting">
+                        <img src="img/video-chat-page/icons/schedule-meeting.svg" alt=""
+                           class="video-chat-page__action-icon">
+                        <p class="video-chat-page__action-text">Schedule a Meeting</p>
+                     </button>
+                  </div>
+                  <div class="video-chat-page__meetings meetings-block">
+                     <h3 class="meetings-block__title">Upcoming Meetings</h3>
+                     <div class="meetings-block__items">
+                        <div class="meetings-block__item meetings-item">
+                           <div class="meetings-item__top">
+                              <h4 class="meetings-item__title">Meeting Title</h4>
+                              <div class="meetings-item__start">Starts in 15 mins</div>
+                           </div>
+                           <div class="meetings-item__info">
+                              <div class="meetings-item__info-item">
+                                 <div class="meetings-item__info-title">Date & Time</div>
+                                 <div class="meetings-item__info-text">Today - 1:00 PM to 2:30 PM</div>
+                              </div>
+                              <div class="meetings-item__info-item">
+                                 <div class="meetings-item__info-title">Meeting ID</div>
+                                 <div class="meetings-item__info-text">555-225-004</div>
+                              </div>
+                              <div class="meetings-item__info-item">
+                                 <div class="meetings-item__info-title">Host</div>
+                                 <div class="meetings-item__info-text">Chris Sikel</div>
+                              </div>
+                           </div>
+                           <div class="meetings-item__link">
+                              <div class="meetings-item__link-title">Link</div>
+                              <a href="https://secure.us/j/2940070626?pwd=QUF1UDVVa3U5OGZxWnBYdXhYWTZFZz09">
+                                 https://secure.us/j/2940070626?pwd=QUF1UDVVa3U5OGZxWnBYdXhYWTZFZz09
+                              </a>
+                           </div>
+                        </div>
+                        <div class="meetings-block__item meetings-item">
+                           <div class="meetings-item__top">
+                              <h4 class="meetings-item__title">Meeting Title</h4>
+                              <div class="meetings-item__start">Starts in 15 mins</div>
+                           </div>
+                           <div class="meetings-item__info">
+                              <div class="meetings-item__info-item">
+                                 <div class="meetings-item__info-title">Date & Time</div>
+                                 <div class="meetings-item__info-text">Today - 1:00 PM to 2:30 PM</div>
+                              </div>
+                              <div class="meetings-item__info-item">
+                                 <div class="meetings-item__info-title">Meeting ID</div>
+                                 <div class="meetings-item__info-text">555-225-004</div>
+                              </div>
+                              <div class="meetings-item__info-item">
+                                 <div class="meetings-item__info-title">Host</div>
+                                 <div class="meetings-item__info-text">Chris Sikel</div>
+                              </div>
+                           </div>
+                           <div class="meetings-item__link">
+                              <div class="meetings-item__link-title">Link</div>
+                              <a href="https://secure.us/j/2940070626?pwd=QUF1UDVVa3U5OGZxWnBYdXhYWTZFZz09">
+                                 https://secure.us/j/2940070626?pwd=QUF1UDVVa3U5OGZxWnBYdXhYWTZFZz09
+                              </a>
+                           </div>
+                        </div>
+                        <div class="meetings-block__item meetings-item">
+                           <div class="meetings-item__top">
+                              <h4 class="meetings-item__title">Meeting Title</h4>
+                              <div class="meetings-item__start">Starts in 15 mins</div>
+                           </div>
+                           <div class="meetings-item__info">
+                              <div class="meetings-item__info-item">
+                                 <div class="meetings-item__info-title">Date & Time</div>
+                                 <div class="meetings-item__info-text">Today - 1:00 PM to 2:30 PM</div>
+                              </div>
+                              <div class="meetings-item__info-item">
+                                 <div class="meetings-item__info-title">Meeting ID</div>
+                                 <div class="meetings-item__info-text">555-225-004</div>
+                              </div>
+                              <div class="meetings-item__info-item">
+                                 <div class="meetings-item__info-title">Host</div>
+                                 <div class="meetings-item__info-text">Chris Sikel</div>
+                              </div>
+                           </div>
+                           <div class="meetings-item__link">
+                              <div class="meetings-item__link-title">Link</div>
+                              <a href="https://secure.us/j/2940070626?pwd=QUF1UDVVa3U5OGZxWnBYdXhYWTZFZz09">
+                                 https://secure.us/j/2940070626?pwd=QUF1UDVVa3U5OGZxWnBYdXhYWTZFZz09
+                              </a>
+                           </div>
+                        </div>
+                        <div class="meetings-block__item meetings-item">
+                           <div class="meetings-item__top">
+                              <h4 class="meetings-item__title">Meeting Title</h4>
+                              <div class="meetings-item__start">Starts in 15 mins</div>
+                           </div>
+                           <div class="meetings-item__info">
+                              <div class="meetings-item__info-item">
+                                 <div class="meetings-item__info-title">Date & Time</div>
+                                 <div class="meetings-item__info-text">Today - 1:00 PM to 2:30 PM</div>
+                              </div>
+                              <div class="meetings-item__info-item">
+                                 <div class="meetings-item__info-title">Meeting ID</div>
+                                 <div class="meetings-item__info-text">555-225-004</div>
+                              </div>
+                              <div class="meetings-item__info-item">
+                                 <div class="meetings-item__info-title">Host</div>
+                                 <div class="meetings-item__info-text">Chris Sikel</div>
+                              </div>
+                           </div>
+                           <div class="meetings-item__link">
+                              <div class="meetings-item__link-title">Link</div>
+                              <a href="https://secure.us/j/2940070626?pwd=QUF1UDVVa3U5OGZxWnBYdXhYWTZFZz09">
+                                 https://secure.us/j/2940070626?pwd=QUF1UDVVa3U5OGZxWnBYdXhYWTZFZz09
+                              </a>
+                           </div>
+                        </div>
+                        <div class="meetings-block__item meetings-item">
+                           <div class="meetings-item__top">
+                              <h4 class="meetings-item__title">Meeting Title</h4>
+                              <div class="meetings-item__start">Starts in 15 mins</div>
+                           </div>
+                           <div class="meetings-item__info">
+                              <div class="meetings-item__info-item">
+                                 <div class="meetings-item__info-title">Date & Time</div>
+                                 <div class="meetings-item__info-text">Today - 1:00 PM to 2:30 PM</div>
+                              </div>
+                              <div class="meetings-item__info-item">
+                                 <div class="meetings-item__info-title">Meeting ID</div>
+                                 <div class="meetings-item__info-text">555-225-004</div>
+                              </div>
+                              <div class="meetings-item__info-item">
+                                 <div class="meetings-item__info-title">Host</div>
+                                 <div class="meetings-item__info-text">Chris Sikel</div>
+                              </div>
+                           </div>
+                           <div class="meetings-item__link">
+                              <div class="meetings-item__link-title">Link</div>
+                              <a href="https://secure.us/j/2940070626?pwd=QUF1UDVVa3U5OGZxWnBYdXhYWTZFZz09">
+                                 https://secure.us/j/2940070626?pwd=QUF1UDVVa3U5OGZxWnBYdXhYWTZFZz09
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="modal fade" id="host-meeting" data-backdrop="static">
+               <div class="modal-dialog">
+                  <div class="modal-content host-modal video-chat-modal">
+                     <div class="video-chat-modal__header">
+                        <h4 class="video-chat-modal__title">Your Meeting is Ready!</h4>
+                     </div>
+                     <form action="#" id="form-host-meeting" class="video-chat-modal__form">
+                        <div class="video-chat-modal__body">
+                           <div class="video-chat-modal__item">
+                              <div class="video-chat-modal__label">Name Your Meeting</div>
+                              <input type="text" placeholder="Your text" class="video-chat-modal__input _req">
+                           </div>
+                           <div class="video-chat-modal__item">
+                              <div class="video-chat-modal__label">Meeting Link</div>
+                              <div class="video-chat-modal__copy-link">
+                                 <a id="video-chat-link"
+                                    href="https://secure.us/j/2940070626?pwd=QUF1UDVVa3U5OGZxWnBYdXhYW TZFZz09">
+                                    https://secure.us/j/2940070626?pwd=QUF1UDVVa3U5OGZxWnBYdXhYW
+                                    TZFZz09
+                                 </a>
+                                 <button type="button" id="copy-link-button" class="video-chat-modal__copy-button">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                       xmlns="http://www.w3.org/2000/svg">
+                                       <path
+                                          d="M5.83317 5.4974V2.9974C5.83317 2.53716 6.20627 2.16406 6.6665 2.16406H16.6665C17.1267 2.16406 17.4998 2.53716 17.4998 2.9974V14.6641C17.4998 15.1243 17.1267 15.4974 16.6665 15.4974H14.1665V17.9966C14.1665 18.4573 13.7916 18.8307 13.3275 18.8307H3.33888C2.87549 18.8307 2.5 18.4602 2.5 17.9966L2.50217 6.33145C2.50225 5.87082 2.8772 5.4974 3.34118 5.4974H5.83317ZM4.16868 7.16406L4.16682 17.1641H12.4998V7.16406H4.16868ZM7.49983 5.4974H14.1665V13.8307H15.8332V3.83073H7.49983V5.4974Z"
+                                          fill="#9CA3AF" />
+                                    </svg>
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="video-chat-modal__item">
+                              <div class="video-chat-modal__label">Participants</div>
+                              <div class="video-chat-modal__participants">
+                                 <div class="video-chat-modal__participants-list _req">
+                                    <li class="video-chat-modal__participant">
+                                       <img src="img/video-chat-page/participants/01.jpg" alt="">
+                                    </li>
+                                    <li class="video-chat-modal__participant">
+                                       <img src="img/video-chat-page/participants/02.jpg" alt="">
+                                    </li>
+                                    <li class="video-chat-modal__participant">
+                                       <img src="img/video-chat-page/participants/03.jpg" alt="">
+                                    </li>
+                                    <li class="video-chat-modal__participant">
+                                       <img src="img/video-chat-page/participants/04.jpg" alt="">
+                                    </li>
+                                    <li class="video-chat-modal__participant">
+                                       <img src="img/video-chat-page/participants/05.jpg" alt="">
+                                    </li>
+                                    <li class="video-chat-modal__participant">
+                                       <img src="img/video-chat-page/participants/06.jpg" alt="">
+                                    </li>
+                                 </div>
+                                 <button data-toggle="modal" data-target="#host-meeting-participants"
+                                    class="video-chat-modal__button-plus" type="button">
+                                    <img src="img/video-chat-page/icons/plus.svg" alt="">
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="video-chat-modal__footer">
+                           <button type="reset" class="video-chat-modal__button button-cancel">
+                              Cancel
+                           </button>
+                           <button type="submit" class="video-chat-modal__button button-submit">
+                              Start Call
+                           </button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="modal fade" id="join-meeting" data-backdrop="static">
+               <div class="modal-dialog">
+                  <div class="modal-content join-modal video-chat-modal">
+                     <div class="video-chat-modal__header">
+                        <h4 class="video-chat-modal__title">Join a Meeting</h4>
+                     </div>
+                     <form action="#" id="form-join-meeting" class="video-chat-modal__form">
+                        <div class="video-chat-modal__body">
+                           <div class="video-chat-modal__item">
+                              <div class="video-chat-modal__label">Meeting ID or Link</div>
+                              <input type="text" placeholder="Enter meeting id or link hear"
+                                 class="video-chat-modal__input _req">
+                           </div>
+                        </div>
+                        <div class="video-chat-modal__footer">
+                           <button type="reset" class="video-chat-modal__button button-cancel">Cancel</button>
+                           <button type="submit" class="video-chat-modal__button button-submit">Join</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="modal fade" id="schedule-meeting" data-backdrop="static">
+               <div class="modal-dialog">
+                  <div class="modal-content schedule-modal video-chat-modal">
+                     <div class="video-chat-modal__header">
+                        <h4 class="video-chat-modal__title">Schedule Meeting</h4>
+                     </div>
+                     <form action="#" id="form-schedule-meeting" class="video-chat-modal__form">
+                        <div class="video-chat-modal__body">
+                           <div class="video-chat-modal__item">
+                              <div class="video-chat-modal__label">Meeting Title</div>
+                              <input type="text" placeholder="Enter meeting title"
+                                 class="video-chat-modal__input meeting-title _req">
+                           </div>
+                           <div class="video-chat-modal__item">
+                              <div class="video-chat-modal__label">Time Zone</div>
+                              <select id="timezone-select" class="_req">
+                                 <option selected disabled value="">Select time zone</option>
+                              </select>
+                           </div>
+                           <div class="video-chat-modal__item">
+                              <div class="video-chat-modal__label">Date</div>
+                              <input type="date" class="video-chat-modal__input _req">
+                           </div>
+                           <div class="video-chat-modal__item">
+                              <div class="video-chat-modal__label">Time</div>
+                              <div class="video-chat-modal__inputs">
+                                 <input type="time" placeholder="Select start time"
+                                    class="video-chat-modal__input _req">
+                                 <p>To</p>
+                                 <input type="time" placeholder="Select end time" class="video-chat-modal__input _req">
+                              </div>
+                           </div>
+                           <div class="video-chat-modal__item">
+                              <div class="video-chat-modal__label">Reminder</div>
+                              <div class="video-chat-modal__inputs">
+                                 <div class="video-chat-modal__counter" data-video-chat-counter>
+                                    <input type="text" placeholder="Your number" disabled
+                                       class="video-chat-modal__counter-input _req">
+                                    <div class="video-chat-modal__counter-buttons">
+                                       <button type="button"
+                                          class="video-chat-modal__counter-button video-chat-modal__counter-button_increment">
+                                       </button>
+                                       <button type="button"
+                                          class="video-chat-modal__counter-button video-chat-modal__counter-button_decrement">
+                                       </button>
+                                    </div>
+                                 </div>
+                                 <select class="video-chat-modal__select _req">
+                                    <option selected disabled value="">Select hear</option>
+                                    <option value="Minutes">Minutes</option>
+                                    <option value="Hours">Hours</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="video-chat-modal__item">
+                              <div class="video-chat-modal__label">Participants</div>
+                              <div class="video-chat-modal__participants">
+                                 <ul class="video-chat-modal__participants-list _req">
+                                 </ul>
+                                 <button data-toggle="modal" data-target="#schedule-meeting-participants"
+                                    class="video-chat-modal__button-plus" type="button">
+                                    <img src="img/video-chat-page/icons/plus.svg" alt="">
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="video-chat-modal__item item-general">
+                              <div class="video-chat-modal__label">General</div>
+                              <label class="video-chat-modal__checkbox" for="general-chbx-1">
+                                 <input type="checkbox" name="" id="general-chbx-1">
+                                 <span></span>
+                                 Always participants to join anytime
+                              </label>
+                              <label class="video-chat-modal__checkbox" for="general-chbx-2">
+                                 <input type="checkbox" name="" id="general-chbx-2">
+                                 <span></span>
+                                 Mute participants upon entry
+                              </label>
+                           </div>
+                        </div>
+                        <div class="video-chat-modal__footer">
+                           <button type="reset" class="video-chat-modal__button button-cancel">Cancel</button>
+                           <button type="submit" class="video-chat-modal__button button-submit">Save</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="modal fade" id="host-meeting-participants">
+               <div class="modal-dialog">
+                  <div class="modal-content modal-participants">
+                     <div class="modal-participants__top">
+                        <div class="modal-participants__search">
+                           <input type="text" placeholder="Search">
+                        </div>
+                        <button type="button" data-dismiss="modal" class="modal-participants__close"></button>
+                     </div>
+                     <div class="modal-participants__wrapper">
+                        <ul class="modal-participants__items">
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="modal fade" id="schedule-meeting-participants">
+               <div class="modal-dialog">
+                  <div class="modal-content modal-participants">
+                     <div class="modal-participants__top">
+                        <div class="modal-participants__search">
+                           <input type="text" placeholder="Search">
+                        </div>
+                        <button type="button" data-dismiss="modal" class="modal-participants__close"></button>
+                     </div>
+                     <div class="modal-participants__wrapper">
+                        <ul class="modal-participants__items">
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="js/app.min.js?_v=20230923000135"></script>
+</body>
+
+</html>
